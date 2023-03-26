@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left-section {
+    width: 30%;
+    height: 100%;
+    background-color: #2C3639;
+    padding: 40px;
+}
+
+
+
+
+/* Profile css */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.profile .profile-image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #DCD7C9;
+}
+
+.profile h2 {
+    color: #ffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.title {
+    color: #fff;
+    padding: 10px 0px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* about css */
+.about {
+    margin-bottom: 20px;
+}
+
+.about .text{
+    color: white;
+    font-weight: 200;
+}
+
+/* Contact css */
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    position: relative;
+}
+ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    color: white;
+}
+
+ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact ul li .text {
+    display: inline-block;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* Language css */
+.language{
+    margin-bottom: 20px;
+}
+
+
+.language ul li {
+    font-weight: 200;
+}
+
+/* Social css */
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.social-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.social-box .social-logo a {
+    font-size: 35px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+ 
+/* Right section css */
+.right-section {
+    width: 70%;
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Experince & Education */
+.header {
+    color: #2C3639;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+}
+
+.experience-box .box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0px;
+}
+
+.experience-box .box .year-company {
+    min-width: 250px;
+    margin-right: 15px;
+}
+
+.experience-box .box .company-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C3639;
+}
+
+.experience-box .box .sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2C3639;
+}
+
+.experience-box .box .text {
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2C3639;
+}
+
+
+/* Education */
+
+.education-box {
+    width: 500px;    
+}
+
+.education-box ul li {
+    margin-bottom: 30px;
+    color: #2C3639;
+}
+
+.education-box ul li .education-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2C3639;
+}
+
+.education-box ul li .sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: #2C3639;
+}
+
+.education-box ul li .text {
+    opacity: 0.7;
+    font-size: 12px;
+    font-weight: 400;
+    color: #2C3639;
+}
+
+/* Skills */
+.skills-box .box {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-box .box h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.skills-box .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(89, 88, 88);
+}
+
+.skills-box .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #7D8F69;
+}
+
+/* Hobbies */
+.hobbies.box {
+    width: 500px;
+}
+.hobbies-box .title2 {
+    margin-bottom: 20px;
+}
+
+.hobbies-box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hobbies-box ul li {
+    list-style: none;
+    font-weight: 500;
+    margin: 10px 0px;
+    color: #2C3639;
+}
+
+.hobbies-box ul li .fa {
+    font-size: 18px;
+    width: 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .left-section{
+        width:100%;
+        display:block;
+    }
+    
+    .container .right-section{
+        width:100%;
+        position:static;
+        display:block;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .experience-box {
+        margin-bottom: 50px;
+    }
+
+    .wrapper .education-box {
+        border-top: 2px solid lightgray;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .experience-box .box {
+        flex-direction: column;
+    }
+
+    .skills-box {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .skills-box .box {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-width: 375px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .left-section{
+        width:100%;
+        display:block;
+    }
+    
+    .container .right-section{
+        width:100%;
+        position:static;
+        display:block;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .experience-box {
+        margin-bottom: 50px;
+    }
+
+    .wrapper .education-box {
+        border-top: 2px solid lightgray;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .experience-box .box {
+        flex-direction: column;
+    }
+
+    .skills-box {
+        margin-bottom: 50px;
+    }
+
+    .hobbies-box ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-box .box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
